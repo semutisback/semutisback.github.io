@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toko Smartphone Premium</title>
+
+<style>
+body { font-family: Arial; margin:0; }
+
+header {
+    background:#0d47a1;
+    color:white;
+    text-align:center;
+    padding:10px;
+}
+
+nav { text-align:center; margin:20px; }
+nav a { margin:0 15px; text-decoration:none; color:#333; font-weight:bold; }
+
+.hero {
+    text-align:center;
+    padding:60px;
+    background:#1976d2;
+    color:white;
+}
+
+.btn {
+    background:#ff9800;
+    color:white;
+    padding:10px 15px;
+    border-radius:5px;
+    text-decoration:none;
+}
+
+.product-menu {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    padding:30px;
+}
+
+.product {
+    width:30%;
+    text-align:center;
+    margin:15px 0;
+}
+
+.product img {
+    width:100%;
+    border-radius:8px;
+}
+
+.price { margin:10px 0; }
+
+.old-price {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.new-price {
+    color: red;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.popup {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    display: none;
+    max-width: 250px;
+}
+
+footer {
+    background:#0d47a1;
+    color:white;
+    text-align:center;
+    padding:10px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Toko Smartphone Premium</h1>
+    <p>Canggih • Original • Bergaransi</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Produk</a>
+    <a href="#">Testimoni</a>
+    <a href="#">Kontak</a>
+</nav>
+
+<div class="hero">
+    <h1>Smartphone Terbaru Harga Terbaik 📱</h1>
+    <p>Dapatkan HP impianmu dengan promo menarik</p>
+    <a href="#" class="btn">Beli Sekarang</a>
+</div>
+
+<div class="product-menu">
+
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9">
+        <h3>Smartphone Android</h3>
+        <div class="price">
+            <span class="old-price">Rp4.000.000</span><br>
+            <span class="new-price">Rp2.999.000</span>
+        </div>
+        <a href="#" class="btn">Beli</a>
+    </div>
+
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5">
+        <h3>Smartphone Flagship</h3>
+        <div class="price">
+            <span class="old-price">Rp10.000.000</span><br>
+            <span class="new-price">Rp7.999.000</span>
+        </div>
+        <a href="#" class="btn">Beli</a>
+    </div>
+
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1580910051074-3eb694886505">
+        <h3>iPhone Premium</h3>
+        <div class="price">
+            <span class="old-price">Rp15.000.000</span><br>
+            <span class="new-price">Rp12.999.000</span>
+        </div>
+        <a href="#" class="btn">Beli</a>
+    </div>
+
+</div>
+
+<div class="popup" id="popup"></div>
+
+<footer>
+    <p>&copy; 2026 TokoSmartphone.com</p>
+</footer>
+
+<script>
+const reviews = [
+    "Andi baru saja membeli smartphone baru ⭐⭐⭐⭐⭐",
+    "Lina puas banget dengan kualitas HP-nya 😍",
+    "Budi beli HP buat kerja 👍",
+    "Sari bilang harganya murah banget 💯"
+];
+
+function showPopup() {
+    const popup = document.getElementById("popup");
+    const random = reviews[Math.floor(Math.random() * reviews.length)];
+    
+    popup.innerText = random;
+    popup.style.display = "block";
+
+    setTimeout(() => {
+        popup.style.display = "none";
+    }, 3000);
+}
+
+setInterval(showPopup, 5000);
+</script>
+
+</body>
+</html>
