@@ -3,84 +3,54 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Toko Smartphone Premium</title>
+<title>Toko Online Jasman25</title>
+
+<meta name="description" content="Temukan berbagai produk pilihan dengan kualitas terbaik dan harga kompetitif.">
 
 <style>
-body { font-family: Arial; margin:0; }
-
-header {
-    background:#0d47a1;
-    color:white;
-    text-align:center;
-    padding:10px;
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#f5f5f5;
+    color:#333;
 }
 
-nav { text-align:center; margin:20px; }
-nav a { margin:0 15px; text-decoration:none; color:#333; font-weight:bold; }
-
-.hero {
-    text-align:center;
-    padding:60px;
-    background:#1976d2;
+header{
+    background:#0f4c81;
     color:white;
+    text-align:center;
+    padding:50px 20px;
 }
 
-.btn {
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:20px;
+}
+
+.section{
+    background:white;
+    padding:25px;
+    margin-bottom:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+}
+
+.btn{
+    display:inline-block;
     background:#ff9800;
     color:white;
-    padding:10px 15px;
-    border-radius:5px;
     text-decoration:none;
+    padding:12px 25px;
+    border-radius:6px;
+    font-weight:bold;
 }
 
-.product-menu {
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:space-around;
-    padding:30px;
-}
-
-.product {
-    width:30%;
+footer{
+    background:#222;
+    color:#fff;
     text-align:center;
-    margin:15px 0;
-}
-
-.product img {
-    width:100%;
-    border-radius:8px;
-}
-
-.price { margin:10px 0; }
-
-.old-price {
-    text-decoration: line-through;
-    color: gray;
-}
-
-.new-price {
-    color: red;
-    font-size: 1.2em;
-    font-weight: bold;
-}
-
-.popup {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    background: white;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
-    display: none;
-    max-width: 250px;
-}
-
-footer {
-    background:#0d47a1;
-    color:white;
-    text-align:center;
-    padding:10px;
+    padding:20px;
 }
 </style>
 </head>
@@ -88,85 +58,76 @@ footer {
 <body>
 
 <header>
-    <h1>Toko Smartphone Premium</h1>
-    <p>Canggih • Original • Bergaransi</p>
+<h1>Selamat Datang di Jasman25</h1>
+<p>Pusat informasi dan produk pilihan dengan kualitas terbaik.</p>
+<a href="#kontak" class="btn">Hubungi Kami</a>
 </header>
 
-<nav>
-    <a href="#">Home</a>
-    <a href="#">Produk</a>
-    <a href="#">Testimoni</a>
-    <a href="#">Kontak</a>
-</nav>
+<div class="container">
 
-<div class="hero">
-    <h1>Smartphone Terbaru Harga Terbaik 📱</h1>
-    <p>Dapatkan HP impianmu dengan promo menarik</p>
-    <a href="#" class="btn">Beli Sekarang</a>
+<div class="section">
+<h2>Tentang Kami</h2>
+<p>
+Jasman25 merupakan platform yang menyediakan berbagai informasi dan penawaran produk pilihan.
+Kami berkomitmen memberikan pengalaman terbaik bagi pengunjung melalui informasi yang jelas,
+transparan, dan mudah dipahami.
+</p>
 </div>
 
-<div class="product-menu">
+<div class="section">
+<h2>Keunggulan Kami</h2>
+<ul>
+<li>Informasi lengkap dan transparan</li>
+<li>Tampilan responsif untuk semua perangkat</li>
+<li>Pelayanan cepat dan ramah</li>
+<li>Update konten secara berkala</li>
+<li>Keamanan data pengguna terjaga</li>
+</ul>
+</div>
 
-    <div class="product">
-        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9">
-        <h3>Smartphone Android</h3>
-        <div class="price">
-            <span class="old-price">Rp4.000.000</span><br>
-            <span class="new-price">Rp2.999.000</span>
-        </div>
-        <a href="#" class="btn">Beli</a>
-    </div>
+<div class="section">
+<h2>Informasi Produk</h2>
+<p>
+Kami menyediakan berbagai informasi produk yang telah dipilih berdasarkan kualitas,
+manfaat, serta kebutuhan pengguna. Setiap produk dilengkapi dengan deskripsi yang jelas
+agar memudahkan pengunjung dalam mengambil keputusan.
+</p>
+</div>
 
-    <div class="product">
-        <img src="https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5">
-        <h3>Smartphone Flagship</h3>
-        <div class="price">
-            <span class="old-price">Rp10.000.000</span><br>
-            <span class="new-price">Rp7.999.000</span>
-        </div>
-        <a href="#" class="btn">Beli</a>
-    </div>
+<div class="section">
+<h2>FAQ</h2>
 
-    <div class="product">
-        <img src="https://images.unsplash.com/photo-1580910051074-3eb694886505">
-        <h3>iPhone Premium</h3>
-        <div class="price">
-            <span class="old-price">Rp15.000.000</span><br>
-            <span class="new-price">Rp12.999.000</span>
-        </div>
-        <a href="#" class="btn">Beli</a>
-    </div>
+<h3>Apa tujuan website ini?</h3>
+<p>Menyediakan informasi dan penawaran produk secara lengkap dan mudah dipahami.</p>
+
+<h3>Apakah website ini aman?</h3>
+<p>Ya, kami mengutamakan keamanan dan kenyamanan pengguna.</p>
+
+<h3>Bagaimana cara menghubungi admin?</h3>
+<p>Anda dapat menggunakan informasi kontak yang tersedia di bawah.</p>
 
 </div>
 
-<div class="popup" id="popup"></div>
+<div class="section" id="kontak">
+<h2>Kontak Kami</h2>
+<p>Email: admin@domainanda.com</p>
+<p>WhatsApp: +62xxxxxxxxxx</p>
+<p>Jam Operasional: Senin - Minggu 08:00 - 22:00 WIB</p>
+</div>
+
+<div class="section">
+<h2>Kebijakan Privasi</h2>
+<p>
+Kami menghormati privasi pengguna dan berkomitmen melindungi informasi yang diberikan
+melalui website ini.
+</p>
+</div>
+
+</div>
 
 <footer>
-    <p>&copy; 2026 TokoSmartphone.com</p>
+© 2026 Jasman25. All Rights Reserved.
 </footer>
-
-<script>
-const reviews = [
-    "Andi baru saja membeli smartphone baru ⭐⭐⭐⭐⭐",
-    "Lina puas banget dengan kualitas HP-nya 😍",
-    "Budi beli HP buat kerja 👍",
-    "Sari bilang harganya murah banget 💯"
-];
-
-function showPopup() {
-    const popup = document.getElementById("popup");
-    const random = reviews[Math.floor(Math.random() * reviews.length)];
-    
-    popup.innerText = random;
-    popup.style.display = "block";
-
-    setTimeout(() => {
-        popup.style.display = "none";
-    }, 3000);
-}
-
-setInterval(showPopup, 5000);
-</script>
 
 </body>
 </html>
