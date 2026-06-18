@@ -3,54 +3,125 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Toko Online Jasman25</title>
-
-<meta name="description" content="Temukan berbagai produk pilihan dengan kualitas terbaik dan harga kompetitif.">
+<title>Kursi Rotan Premium</title>
 
 <style>
-body{
-    margin:0;
-    font-family:Arial,sans-serif;
-    background:#f5f5f5;
-    color:#333;
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
 }
 
-header{
-    background:#0f4c81;
-    color:white;
-    text-align:center;
-    padding:50px 20px;
+/* HEADER */
+header {
+    background: #5d4037;
+    color: white;
+    text-align: center;
+    padding: 15px;
 }
 
-.container{
-    max-width:1100px;
-    margin:auto;
-    padding:20px;
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background: #795548;
+    padding: 10px;
 }
 
-.section{
-    background:white;
-    padding:25px;
-    margin-bottom:20px;
-    border-radius:10px;
-    box-shadow:0 2px 8px rgba(0,0,0,.08);
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.btn{
-    display:inline-block;
-    background:#ff9800;
-    color:white;
-    text-decoration:none;
-    padding:12px 25px;
-    border-radius:6px;
-    font-weight:bold;
+/* MARQUEE */
+.marquee {
+    background: #ffd54f;
+    padding: 10px;
+    font-weight: bold;
 }
 
-footer{
-    background:#222;
-    color:#fff;
-    text-align:center;
-    padding:20px;
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 30px;
+    background: white;
+}
+
+.hero img {
+    width: 300px;
+    max-width: 90%;
+    border-radius: 10px;
+}
+
+/* FLASH SALE */
+.flash-sale {
+    background: #d32f2f;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* SLIDER */
+.slider {
+    width: 100%;
+    overflow: hidden;
+    background: white;
+}
+
+.slides {
+    display: flex;
+    animation: slide 12s infinite;
+}
+
+.slides img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+}
+
+@keyframes slide {
+    0% {transform: translateX(0);}
+    33% {transform: translateX(-100%);}
+    66% {transform: translateX(-200%);}
+    100% {transform: translateX(0);}
+}
+
+/* SECTION */
+.section {
+    background: white;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* TESTIMONI */
+.testimoni {
+    background: #f1f1f1;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+/* BUTTON */
+button {
+    background: #25D366;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #5d4037;
+    color: white;
 }
 </style>
 </head>
@@ -58,75 +129,92 @@ footer{
 <body>
 
 <header>
-<h1>Selamat Datang di Jasman25</h1>
-<p>Pusat informasi dan produk pilihan dengan kualitas terbaik.</p>
-<a href="#kontak" class="btn">Hubungi Kami</a>
+    <h1>Kursi Rotan Premium</h1>
+    <p>Natural • Estetik • Nyaman</p>
 </header>
 
-<div class="container">
+<nav>
+    <a href="#produk">Produk</a>
+    <a href="#promo">Promo</a>
+    <a href="#testimoni">Testimoni</a>
+    <a href="#kontak">Kontak</a>
+</nav>
 
-<div class="section">
-<h2>Tentang Kami</h2>
-<p>
-Jasman25 merupakan platform yang menyediakan berbagai informasi dan penawaran produk pilihan.
-Kami berkomitmen memberikan pengalaman terbaik bagi pengunjung melalui informasi yang jelas,
-transparan, dan mudah dipahami.
-</p>
+<div class="marquee">
+<marquee>🔥 Promo Hari Ini! Diskon hingga 35% | Kursi Rotan Handmade | Stok Terbatas 🔥</marquee>
 </div>
 
-<div class="section">
-<h2>Keunggulan Kami</h2>
-<ul>
-<li>Informasi lengkap dan transparan</li>
-<li>Tampilan responsif untuk semua perangkat</li>
-<li>Pelayanan cepat dan ramah</li>
-<li>Update konten secara berkala</li>
-<li>Keamanan data pengguna terjaga</li>
-</ul>
+<!-- HERO -->
+<div class="hero" id="produk">
+    <h2>Kursi Rotan Estetik untuk Rumah Anda</h2>
+    <img src="https://download-warehouse.sketchup.com/warehouse/v1.0/content/public/735791c5-d6ba-4ab5-9c86-4a8dc5688aed" alt="Kursi Rotan">
+    <p>Hadirkan nuansa natural & elegan di rumah Anda dengan kursi rotan berkualitas.</p>
 </div>
 
-<div class="section">
-<h2>Informasi Produk</h2>
-<p>
-Kami menyediakan berbagai informasi produk yang telah dipilih berdasarkan kualitas,
-manfaat, serta kebutuhan pengguna. Setiap produk dilengkapi dengan deskripsi yang jelas
-agar memudahkan pengunjung dalam mengambil keputusan.
-</p>
+<!-- FLASH SALE -->
+<div class="flash-sale" id="promo">
+    FLASH SALE! Mulai Rp299.000
 </div>
 
-<div class="section">
-<h2>FAQ</h2>
-
-<h3>Apa tujuan website ini?</h3>
-<p>Menyediakan informasi dan penawaran produk secara lengkap dan mudah dipahami.</p>
-
-<h3>Apakah website ini aman?</h3>
-<p>Ya, kami mengutamakan keamanan dan kenyamanan pengguna.</p>
-
-<h3>Bagaimana cara menghubungi admin?</h3>
-<p>Anda dapat menggunakan informasi kontak yang tersedia di bawah.</p>
-
+<!-- SLIDER PRODUK (SEMUA FOTO KURSI ROTAN) -->
+<div class="slider">
+    <div class="slides">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
+        <img src="https://images.unsplash.com/photo-1616627451515-cbc80e5d6c3c">
+        <img src="https://images.unsplash.com/photo-1615874959474-d609969a20ed">
+    </div>
 </div>
 
+<!-- KEUNGGULAN -->
+<div class="section">
+    <h2>Keunggulan Kursi Rotan Kami</h2>
+    <ul>
+        <li>✔ Material rotan asli berkualitas</li>
+        <li>✔ Desain estetik & kekinian</li>
+        <li>✔ Ringan namun kuat</li>
+        <li>✔ Cocok untuk indoor & outdoor</li>
+        <li>✔ Handmade & tahan lama</li>
+    </ul>
+</div>
+
+<!-- CTA -->
+<div class="section">
+    <h2>Pesan Sekarang</h2>
+    <p>Lengkapi interior rumah Anda dengan kursi rotan premium</p>
+    <a href="https://wa.me/6281234567890">
+        <button>Pesan via WhatsApp</button>
+    </a>
+</div>
+
+<!-- TESTIMONI -->
+<div class="section" id="testimoni">
+    <h2>Testimoni Pelanggan</h2>
+
+    <div class="testimoni">
+        <p>"Kursinya cantik banget, bikin rumah makin estetik!"</p>
+        <strong>- Dina</strong>
+    </div>
+
+    <div class="testimoni">
+        <p>"Kualitas rotannya kuat dan nyaman didudukin."</p>
+        <strong>- Rudi</strong>
+    </div>
+
+    <div class="testimoni">
+        <p>"Pengiriman cepat, barang sesuai foto."</p>
+        <strong>- Sari</strong>
+    </div>
+</div>
+
+<!-- KONTAK -->
 <div class="section" id="kontak">
-<h2>Kontak Kami</h2>
-<p>Email: admin@domainanda.com</p>
-<p>WhatsApp: +62xxxxxxxxxx</p>
-<p>Jam Operasional: Senin - Minggu 08:00 - 22:00 WIB</p>
-</div>
-
-<div class="section">
-<h2>Kebijakan Privasi</h2>
-<p>
-Kami menghormati privasi pengguna dan berkomitmen melindungi informasi yang diberikan
-melalui website ini.
-</p>
-</div>
-
+    <h2>Kontak</h2>
+    <p>WhatsApp: 081234567890</p>
+    <p>Email: sales@kursirotan.com</p>
 </div>
 
 <footer>
-© 2026 Jasman25. All Rights Reserved.
+    <p>&copy; 2026 Kursi Rotan Store. All Rights Reserved.</p>
 </footer>
 
 </body>
